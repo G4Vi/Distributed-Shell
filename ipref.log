@@ -1,0 +1,100 @@
+ubuntu@ip-172-31-57-163:/usr/local/bin$ iperf3 -c 130.215.243.156 -p 53000                                                            
+Connecting to host 130.215.243.156, port 53000                                                                                        
+[  4] local 172.31.57.163 port 58345 connected to 130.215.243.156 port 53000                                                          
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd                                                                      
+[  4]   0.00-1.00   sec  12.2 MBytes   103 Mbits/sec   18    667 KBytes                                                               
+[  4]   1.00-2.00   sec  11.2 MBytes  94.2 Mbits/sec    2    513 KBytes                                                               
+[  4]   2.00-3.00   sec  11.2 MBytes  93.9 Mbits/sec    0    542 KBytes                                                               
+[  4]   3.00-4.00   sec  11.2 MBytes  94.4 Mbits/sec    0    560 KBytes                                                               
+[  4]   4.00-5.00   sec  11.2 MBytes  94.3 Mbits/sec    0    568 KBytes                                                               
+[  4]   5.00-6.00   sec  11.2 MBytes  94.1 Mbits/sec    0    570 KBytes                                                               
+[  4]   6.00-7.00   sec  9.99 MBytes  83.8 Mbits/sec   15    450 KBytes                                                               
+[  4]   7.00-8.00   sec  11.2 MBytes  94.2 Mbits/sec   19    352 KBytes                                                               
+[  4]   8.00-9.00   sec  9.93 MBytes  83.3 Mbits/sec    0    379 KBytes                                                               
+[  4]   9.00-10.00  sec  11.2 MBytes  93.7 Mbits/sec    0    395 KBytes                                                               
+- - - - - - - - - - - - - - - - - - - - - - - - -                                                                                     
+[ ID] Interval           Transfer     Bandwidth       Retr                                                                            
+[  4]   0.00-10.00  sec   111 MBytes  92.9 Mbits/sec   54             sender                                                          
+[  4]   0.00-10.00  sec   108 MBytes  90.2 Mbits/sec                  receiver                                                        
+                                                                                                                                      
+iperf Done.                                                                                                                           
+ubuntu@ip-172-31-57-163:/usr/local/bin$ iperf3 -c 130.215.243.156 -p 53000                                                            
+Connecting to host 130.215.243.156, port 53000                                                                                        
+[  4] local 172.31.57.163 port 58347 connected to 130.215.243.156 port 53000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  5.57 MBytes  46.8 Mbits/sec    0    313 KBytes       
+[  4]   1.00-2.00   sec  12.2 MBytes   103 Mbits/sec    0   1.02 MBytes       
+[  4]   2.00-3.00   sec  10.0 MBytes  83.9 Mbits/sec   73    404 KBytes       
+[  4]   3.00-4.00   sec  11.2 MBytes  94.2 Mbits/sec    0    436 KBytes       
+[  4]   4.00-5.00   sec  9.96 MBytes  83.6 Mbits/sec    0    452 KBytes       
+[  4]   5.00-6.00   sec  9.94 MBytes  83.4 Mbits/sec    0    461 KBytes       
+[  4]   6.00-7.00   sec  9.92 MBytes  83.2 Mbits/sec    0    464 KBytes       
+[  4]   7.00-8.00   sec  11.2 MBytes  94.1 Mbits/sec    0    464 KBytes       
+[  4]   8.00-9.00   sec  9.99 MBytes  83.8 Mbits/sec    0    464 KBytes       
+[  4]   9.00-10.00  sec  11.2 MBytes  94.3 Mbits/sec    0    469 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec   101 MBytes  85.0 Mbits/sec   73             sender
+[  4]   0.00-10.00  sec  98.3 MBytes  82.5 Mbits/sec                  receiver
+
+iperf Done.
+ubuntu@ip-172-31-57-163:/usr/local/bin$ iperf3 -c 130.215.243.156 -p 53000
+Connecting to host 130.215.243.156, port 53000
+[  4] local 172.31.57.163 port 58349 connected to 130.215.243.156 port 53000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  12.6 MBytes   106 Mbits/sec    0    898 KBytes       
+[  4]   1.00-2.00   sec  9.97 MBytes  83.6 Mbits/sec   32    516 KBytes       
+[  4]   2.00-3.00   sec  11.2 MBytes  93.7 Mbits/sec   61    397 KBytes       
+[  4]   3.00-4.00   sec  9.96 MBytes  83.5 Mbits/sec    0    421 KBytes       
+[  4]   4.00-5.00   sec  9.94 MBytes  83.4 Mbits/sec    6    314 KBytes       
+[  4]   5.00-6.00   sec  7.28 MBytes  61.0 Mbits/sec   28    246 KBytes       
+[  4]   6.00-7.00   sec  8.43 MBytes  70.7 Mbits/sec    0    262 KBytes       
+[  4]   7.00-8.00   sec  7.26 MBytes  60.9 Mbits/sec    0    267 KBytes       
+[  4]   8.00-9.00   sec  9.84 MBytes  82.5 Mbits/sec    0    269 KBytes       
+[  4]   9.00-10.00  sec  8.55 MBytes  71.7 Mbits/sec    0    279 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  95.0 MBytes  79.7 Mbits/sec  127             sender
+[  4]   0.00-10.00  sec  92.0 MBytes  77.2 Mbits/sec                  receiver
+
+iperf Done.
+ubuntu@ip-172-31-57-163:/usr/local/bin$ iperf3 -c 130.215.243.156 -p 53000
+Connecting to host 130.215.243.156, port 53000
+[  4] local 172.31.57.163 port 58351 connected to 130.215.243.156 port 53000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  11.6 MBytes  97.1 Mbits/sec    4    414 KBytes       
+[  4]   1.00-2.00   sec  8.29 MBytes  69.6 Mbits/sec   13    325 KBytes       
+[  4]   2.00-3.00   sec  8.92 MBytes  74.8 Mbits/sec    0    346 KBytes       
+[  4]   3.00-4.00   sec  9.25 MBytes  77.6 Mbits/sec    0    358 KBytes       
+[  4]   4.00-5.00   sec  10.4 MBytes  86.8 Mbits/sec    0    362 KBytes       
+[  4]   5.00-6.00   sec  9.16 MBytes  76.8 Mbits/sec    0    362 KBytes       
+[  4]   6.00-7.00   sec  10.3 MBytes  86.6 Mbits/sec    0    362 KBytes       
+[  4]   7.00-8.00   sec  9.26 MBytes  77.7 Mbits/sec    0    368 KBytes       
+[  4]   8.00-9.00   sec  10.2 MBytes  85.6 Mbits/sec    0    378 KBytes       
+[  4]   9.00-10.00  sec  10.3 MBytes  86.1 Mbits/sec    0    396 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  97.6 MBytes  81.9 Mbits/sec   17             sender
+[  4]   0.00-10.00  sec  95.5 MBytes  80.1 Mbits/sec                  receiver
+
+iperf Done.
+ubuntu@ip-172-31-57-163:/usr/local/bin$ iperf3 -c 130.215.243.156 -p 53000
+Connecting to host 130.215.243.156, port 53000
+[  4] local 172.31.57.163 port 58353 connected to 130.215.243.156 port 53000
+[ ID] Interval           Transfer     Bandwidth       Retr  Cwnd
+[  4]   0.00-1.00   sec  13.0 MBytes   109 Mbits/sec   31    527 KBytes       
+[  4]   1.00-2.00   sec  11.2 MBytes  93.8 Mbits/sec    0    598 KBytes       
+[  4]   2.00-3.00   sec  8.63 MBytes  72.4 Mbits/sec  108    457 KBytes       
+[  4]   3.00-4.00   sec  11.2 MBytes  94.0 Mbits/sec    0    494 KBytes       
+[  4]   4.00-5.00   sec  9.93 MBytes  83.3 Mbits/sec   89    372 KBytes       
+[  4]   5.00-6.00   sec  9.99 MBytes  83.8 Mbits/sec    0    403 KBytes       
+[  4]   6.00-7.00   sec  11.2 MBytes  94.0 Mbits/sec    0    420 KBytes       
+[  4]   7.00-8.00   sec  9.96 MBytes  83.6 Mbits/sec    3    301 KBytes       
+[  4]   8.00-9.00   sec  7.28 MBytes  61.1 Mbits/sec   24    236 KBytes       
+[  4]   9.00-10.00  sec  8.43 MBytes  70.7 Mbits/sec    0    250 KBytes       
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec   101 MBytes  84.5 Mbits/sec  255             sender
+[  4]   0.00-10.00  sec  98.2 MBytes  82.4 Mbits/sec                  receiver
+
+iperf Done.

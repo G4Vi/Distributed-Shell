@@ -1,0 +1,134 @@
+ubuntu@ip-172-31-57-163:~$ free -h
+             total       used       free     shared    buffers     cached
+Mem:          992M       544M       448M       340K        54M       414M
+-/+ buffers/cache:        75M       917M
+Swap:           0B         0B         0B
+ubuntu@ip-172-31-57-163:~$ 
+
+ubuntu@ip-172-31-57-163:~$ sysbench --test=fileio --file-total-size=1G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 8192Kb each, 1024Mb total
+Creating files for the test...
+
+ubuntu@ip-172-31-57-163:~$ sysbench --test=fileio --file-total-size=1G --file-test-mode=rndrw --init-rng=on --max-time=30 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from timer.
+
+
+Extra file open flags: 0
+128 files, 8Mb each
+1Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  37260 Read, 24840 Write, 79477 Other = 141577 Total
+Read 582.19Mb  Written 388.12Mb  Total transferred 970.31Mb  (32.343Mb/sec)
+ 2069.94 Requests/sec executed
+
+Test execution summary:
+    total time:                          30.0009s
+    total number of events:              62100
+    total time taken by event execution: 6.6447
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.11ms
+         max:                                 10.31ms
+         approx.  95 percentile:               0.44ms
+
+Threads fairness:
+    events (avg/stddev):           62100.0000/0.00
+    execution time (avg/stddev):   6.6447/0.00
+
+ubuntu@ip-172-31-57-163:~$ sysbench --test=fileio --file-total-size=1G --file-test-mode=rndrw --init-rng=on --max-time=30 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from timer.
+
+
+Extra file open flags: 0
+128 files, 8Mb each
+1Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  36885 Read, 24590 Write, 78592 Other = 140067 Total
+Read 576.33Mb  Written 384.22Mb  Total transferred 960.55Mb  (32.018Mb/sec)
+ 2049.14 Requests/sec executed
+
+Test execution summary:
+    total time:                          30.0004s
+    total number of events:              61475
+    total time taken by event execution: 7.1142
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.12ms
+         max:                                 12.18ms
+         approx.  95 percentile:               0.70ms
+
+Threads fairness:
+    events (avg/stddev):           61475.0000/0.00
+    execution time (avg/stddev):   7.1142/0.00
+
+ubuntu@ip-172-31-57-163:~$ sysbench --test=fileio --file-total-size=1G --file-test-mode=rndrw --init-rng=on --max-time=30 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from timer.
+
+
+Extra file open flags: 0
+128 files, 8Mb each
+1Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  39300 Read, 26200 Write, 83712 Other = 149212 Total
+Read 614.06Mb  Written 409.38Mb  Total transferred 1023.4Mb  (34.114Mb/sec)
+ 2183.31 Requests/sec executed
+
+Test execution summary:
+    total time:                          30.0003s
+    total number of events:              65500
+    total time taken by event execution: 5.1334
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.08ms
+         max:                                 10.03ms
+         approx.  95 percentile:               0.65ms
+
+Threads fairness:
+    events (avg/stddev):           65500.0000/0.00
+    execution time (avg/stddev):   5.1334/0.00
+
+sysbench --test=fileio --file-total-size=1G cleanup

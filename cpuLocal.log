@@ -1,0 +1,90 @@
+g4vi@TELEPORTER sysbench --test=cpu --cpu-max-prime=20000 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          18.1073s
+    total number of events:              10000
+    total time taken by event execution: 18.1068
+    per-request statistics:
+         min:                                  1.81ms
+         avg:                                  1.81ms
+         max:                                  1.88ms
+         approx.  95 percentile:               1.81ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   18.1068/0.00
+
+sysbench --test=fileio --file-total-size=9G prepare
+
+sysbench --test=fileio --file-total-size=9G --file-test-mode=rndrw --init-rng=on --max-time=30 --max-requests=0 run
+
+sysbench --test=fileio --file-total-size=9G cleanup
+mg4vi@TELEPORTER sysbench --test=cpu --cpu-max-prime=20000 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          18.1105s
+    total number of events:              10000
+    total time taken by event execution: 18.1100
+    per-request statistics:
+         min:                                  1.81ms
+         avg:                                  1.81ms
+         max:                                  1.84ms
+         approx.  95 percentile:               1.81ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   18.1100/0.00
+
+g4vi@TELEPORTER sysbench --test=cpu --cpu-max-prime=20000 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          18.1097s
+    total number of events:              10000
+    total time taken by event execution: 18.1092
+    per-request statistics:
+         min:                                  1.81ms
+         avg:                                  1.81ms
+         max:                                  1.84ms
+         approx.  95 percentile:               1.81ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   18.1092/0.00
+
+

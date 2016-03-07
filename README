@@ -1,0 +1,28 @@
+//Project 2 Gavin Hayes gahayes@wpi.edu CS4513 C16
+
+To compile all projects type 'sh MakeAll.sh' which calls make on both the client and server
+To compile one at a time instead enter their respective directories and type make.
+
+For usage messages run either program with -h. Exact same flags as Claypool's example were implemented.
+Both programs can run without any options, but in order to specify things like hostname, port, directory, or supply your command at launch
+flags must be set.
+No login is needed. A username of john and a password of 1234 is hardcoded in both programs. To modify see server.h and the main function in the client main.cpp.
+-lcrypt had to be added for the crypt function for g++. Everything else should be on GNU or at least Linux system.
+
+The server was designed to be psuedo telnet compatible for easy testing before I had a client. 
+Security is definitely a big deal with programs like these as I left my server running on my computer and came back to 3 HTTP request messages
+from bots looking for website admin pages on my server as it was running on 8080. 
+
+Code comments:
+C++ strings were used whenever convenient, but c-strings had to be used for *nix functions, especially if the function modified the supplied string.
+It would have been nice to  not fork for the exec as the program only runs one command, but if I did that it wouldn't have freed wordexp.
+
+Function summaries: See client.h and server.h
+
+
+Report - It was interesting to experiment with the cloud server, but isn't practicle yet to do all major computing offsite with the combination
+of disk and network speeds mainly. See proj2_report.pdf to see how the tests were done. All tests are included as log files.
+Network latency no log see setupandteardown.sh and report.
+Network throughput test - ipref.log
+cpu tests cpuLocal.log, cpuAmazon.log
+io test   ioLocal.log, ioAmazon.log
